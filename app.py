@@ -14,3 +14,7 @@ def indexPage():
 @app.route("/result",methods=['POST'])
 def resultPage():
     return send_file("result.html")
+
+@app.route("/recommendation",methods=['POST'])
+def recommendationPage():
+    return send_file("recommendation.html")

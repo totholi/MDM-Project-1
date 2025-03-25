@@ -38,6 +38,37 @@
                 </div>
             </form>
         </div>
+
+        <div class="container mt-5">
+            <h2 class="text-center">Recommendations based on politician</h2>
+            <form action="/recommendation" method="POST">
+                <div class="form-group">
+                    <label for="politicians">Select Politicians:</label>
+                    <select multiple class="form-control" id="politicians" name="politicians[]">
+                        <option>Politician 1</option>
+                        <option>Politician 2</option>
+                        <option>Politician 3</option>
+                        <option>Politician 4</option>
+                        <option>Politician 5</option>
+                        <option>Politician 6</option>
+                        <option>Politician 7</option>
+                        <option>Politician 8</option>
+                        <option>Politician 9</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="stock">Select Stock:</label>
+                    <select class="form-control" id="stock" name="stock">
+                        <option>Stock 1</option>
+                        <option>Stock 2</option>
+                        <option>Stock 3</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
