@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Search Results</h1>
+        <div class="container mt-5">
+            <h2 class="text-center">Stock Price Graph</h2>
+            <canvas id="stockPriceChart"></canvas>
+        </div>
+    
+        <script>
+            const ctx = document.getElementById('stockPriceChart').getContext('2d');
+            const stockPriceChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['January 2024', 'February 2024', 'March 2024', 'April 2024', 'May 2024', 'June 2024', 'July 2024', 'August 2024', 'September 2024', 'October 2024', 'November 2024', 'December 2024', 'January 2025', 'February 2025', 'March 2025'],
+                    datasets: [{
+                        label: 'Stock Price',
+                        data: [150, 160, 155, 165, 170, 175, 160, 180, 185, 190, 200, 210, 220, 230, 240],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderWidth: 2,
+                        fill: true
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Month'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Price'
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+        <div class="container mt-5">
+            <h2 class="text-center">Stock Ticks</h2>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Politician</th>
+                    <th>Company</th>
+                    <th>Stock ISIN</th>
+                    <th>Current Price</th>
+                    <th>Increase/Decrease</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Politician Name</td>
+                    <td>Company Name</td>
+                    <td>US1234567890</td>
+                    <td>$100.00</td>
+                    <td>+2.5%</td>
+                    <td>2025-03-25</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
